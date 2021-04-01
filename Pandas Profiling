@@ -17,3 +17,6 @@ data.corr()
 #For heatmap correlation with values
 plt.figure(figsize=(15,8)) 
 sns.heatmap(data.corr(), annot=True, cmap="Blues")
+
+#Extra
+var=df['id'].value_counts().reset_index().rename(columns={'index':'id', 'id': 'count'})
